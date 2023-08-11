@@ -12,8 +12,10 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+
 def is_palindrome(word):
     word = input("palindrome checker: ")
+    #input a word to check if its a palindrome
     letters = []
     reversed_list = []
     for char in word:
@@ -24,10 +26,19 @@ def is_palindrome(word):
     if reversed_list[0] is letters[0]:
         print(True)
     else:
-        print(False)
+        (False)
 
 
-is_palindrome("racecar")
+
+# is_palindrome("racecar")
+
+# def is_palindrome(word):
+#     reversed_list_of_letters = reversed(word)                   # solution
+#     reversed_word = "".join(reversed_list_of_letters)           # solution
+#     if reversed_word == word:                                   # solution
+#         return True                                             # solution
+#     else:                                                       # solution
+#         return False                                            # solution
 
 
 
