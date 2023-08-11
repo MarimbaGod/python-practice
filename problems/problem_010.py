@@ -16,4 +16,4 @@ def is_divisible_by_3(number):
     else:
         return number
 
-print(is_divisible_by_3(10))
+# print(is_divisible_by_3(9))
