@@ -38,3 +38,12 @@ def max_of_three(value1, value2, value3):
 
 
 max_of_three(17, 17.1, 17.02)
+# def max_of_three(value1, value2, value3):
+#     if value1 >= value2 and value1 >= value3:                   # solution
+#         return value1                                           # solution
+#     elif value2 >= value1 and value2 >= value3:                 # solution
+#         return value2                                           # solution
+#     else:                                                       # solution
+#         return value3                                           # solution
+#     # pass
+# I didnt use return
