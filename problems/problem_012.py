@@ -28,7 +28,7 @@ def fizzbuzz(number):
         return number
 
 
-print(fizzbuzz(15))
-print(fizzbuzz(9))
-print(fizzbuzz(20))
-print(fizzbuzz(17))
+# print(fizzbuzz(15))
+# print(fizzbuzz(9))
+# print(fizzbuzz(20))
+# print(fizzbuzz(17))
