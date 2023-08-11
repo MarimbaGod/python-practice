@@ -13,4 +13,36 @@
 # problem to get a good feel for how to solve it.
 
 def is_palindrome(word):
-    pass
+    word = input("palindrome checker: ")
+    letters = []
+    reversed_list = []
+    for char in word:
+        letters.insert(0, char)
+        #this accidentally reverses the letters anyway, so it throws False because
+        #it accidentally reverses letters, and intentionally reverses it to create the other list
+        reversed_list.append(char)
+    if reversed_list[0] is letters[0]:
+        print(True)
+    else:
+        print(False)
+
+
+is_palindrome("racecar")
+
+
+
+
+
+
+#     reverse_list = reversed(letters)
+#     if letters is reverse_list:
+#         print(True)
+#     else:
+#         print(False)
+#     # print(reverse_list)
+#     print(reverse_list)
+
+# is_palindrome("apple")
+
+# # ['t', 'a', 'c', 'o', 'c', 'a', 't']
+# # is_palindrome("racecar")
