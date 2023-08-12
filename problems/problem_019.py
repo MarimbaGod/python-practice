@@ -10,9 +10,23 @@
 # The is_inside_bounds function returns true if all of
 # the following are true
 #   * x is greater than or equal to rect_x
+# x >= rect_x
 #   * y is greater than or equal to rect_y
+# y >= rect_y
 #   * x is less than or equal to rect_x + rect_width
+# x <= rect_x + rect_width
 #   * y is less than or equal to rect_y + rect_height
-
+# y <= rect_y + rect_height
 def is_inside_bounds(x, y, rect_x, rect_y, rect_width, rect_height):
-    pass
+    if (
+        x >= rect_x and
+        y >= rect_y and
+        x <= rect_x +rect_width and
+        y <= rect_y + rect_height
+    ):
+        return True
+    else:
+        return False
+
+#attempt to test
+# print(is_inside_bounds(5, 5, 6, 9, 3, 9))
