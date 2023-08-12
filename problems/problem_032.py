@@ -16,4 +16,9 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_numbers(limit):
-    pass
+    if limit < 0:                                       # solution
+        return None                                     # solution
+    sum = 0                                             # solution
+    for i in range(limit + 1):                          # solution
+        sum = sum + i                                   # solution
+    return sum                                          # solution
