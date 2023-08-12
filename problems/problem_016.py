@@ -13,4 +13,4 @@ def is_inside_bounds(x, y):
 
 # x = input("x is: ")
 # y = input("y is: ")
-print(is_inside_bounds(x, y))
+# print(is_inside_bounds(x, y))
