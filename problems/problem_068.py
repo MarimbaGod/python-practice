@@ -37,3 +37,17 @@
             # return True
         # otherwise
             # return None
+
+
+class Person:
+    def __init__(self, name, hated_foods, loved_foods):
+        self.name = name
+        self.hated_foods = hated_foods
+        self.loved_foods = loved_foods
+    def taste(self, food_name):
+        if food_name in hated_foods:
+            return False
+        elif food_name not in hated_foods and food_name not in loved_foods:
+            return None
+        elif food_name in loved_foods:
+            return True
