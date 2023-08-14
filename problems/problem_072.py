@@ -27,4 +27,25 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+class Person:
+    def __init__(self, name, hated_foods, loved_foods):
+        self.name = name
+        self.hated_foods = hated_foods
+        self.loved_foods = loved_foods
+        # self.hated_foods = []    #didn't need to actually set them to lists
+        # self.loved_foods = []
+    # def taste(food_name):  #needed (self,) then the other parameter
+    def taste(self, food_name):
+        if food_name in self.loved_foods:
+            return True
+        elif food_name in self.hated_foods:
+            return False
+        else:
+            return None
 
+
+
+# Example:
+person = Person("Malik", ["cottage cheese", "sauerkraut"], ["pizza", "ramen"])
+
+print(person.taste("ramen"))
