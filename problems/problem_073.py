@@ -28,19 +28,22 @@ class Student:
         self.name = name
     def add_score(self, score):
         # for score in self.scores: didnt need a for loop
-        self.scores.append(score)
+        return self.scores.append(score)
+        #unsure about why I need the return statement
 
     def get_average(self):
         if len(self.scores) == 0:
             return None
         else:
             return sum(self.scores) // len(self.scores)
+        # one / returns a float (decimal)
+        #two // returns as whole number
 
 
 student = Student("Malik")
 
 
-student.add_score(80)
-student.add_score(90)
-student.add_score(82)
+student.add_score(22)
+student.add_score(23)
+student.add_score(24)
 print(student.get_average())
