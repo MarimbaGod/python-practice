@@ -18,6 +18,39 @@
 #    print(account.get_balance())  # prints 50
 #    account.deposit(120)
 #    print(account.get_balance())  # prints 170
+
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def get_balance(self):
+        return self.balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        # self.balance = self.balance + amount   #OR THIS WORKS
+        #self.balance + amount didnt work
+        #needed the +=
+
+    def withdraw(self, amount):
+        self.balance -= amount
+
+
+#test
+# account = BankAccount(100)
+# account.deposit(50)
+
+# print(account.get_balance())
+
+
+
+
+
+
+
+
+
+
 #
 # There is pseudocode for you to guide you.
 
