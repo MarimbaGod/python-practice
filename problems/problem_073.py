@@ -22,6 +22,25 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+class Student:
+    def __init__(self, name):
+        self.scores = []
+        self.name = name
+    def add_score(self, score):
+        # for score in self.scores: didnt need a for loop
+        self.scores.append(score)
+
+    def get_average(self):
+        if len(self.scores) == 0:
+            return None
+        else:
+            return sum(self.scores) // len(self.scores)
 
 
+student = Student("Malik")
 
+
+student.add_score(80)
+student.add_score(90)
+student.add_score(82)
+print(student.get_average())
