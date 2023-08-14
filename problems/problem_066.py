@@ -32,11 +32,11 @@
         # returns "Title: " + self.title
 
 class Book:
-    def __init__(self, get_author, get_title):
+    def __init__(self, author, title):
         self.author = author
         self.title = title
     def get_author(self):
-        return "Author: " +self.author
+        return "Author: " + self.author
 
     def get_title(self):
-        return "Title: " + self_title
+        return "Title: " + self.title
