@@ -8,6 +8,13 @@
 #
 # Pseudocode is available for you
 
+
+
+#I forgot to return none if the list is empty.
+#I already saw the answer though, so its just basically
+#checking to see if the len of the list == 0, and if it does,
+#return None
+
 def calculate_average(values):
     values = [10, 2, 8, 1, 61]
     for num in values:
