@@ -35,3 +35,15 @@
     # method get_email(self)
         # returns self.first_name.lower() + "." + self.last_name.lower()
         #         + "@company.com"
+
+
+class Employee:
+    def __init__(self):
+        self.first_name = first_name
+        self.last_name = last_name
+    def get_fullname(self):
+        #the " " is to space out the output as First Last
+        return self.first_name + " " + self.last_name
+    def get_email(self):
+        # returns the firstname in lowercase, adds a . , and lastname in lowercase
+        return self.first_name.lower() + "." + self.last_name.lower() + "@company.com"
