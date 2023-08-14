@@ -22,16 +22,17 @@
 # There is pseudocode for you to guide you.
 
 
-# class Student
-    # method initializer with required state "name"
-        # self.name = name
-        # self.scores = [] because its an internal state
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.scores = []
+        # self.add_score(score) = add_score(score)
+        # self.get_average() = get_average()
+    def add_score(self, score):
+        self.scores.append(score)
 
-    # method add_score(self, score)
-        # appends the score value to self.scores
-
-    # method get_average(self)
-        # if there are no scores in self.scores
-            # return None
-        # returns the sum of the scores divided by
-        # the number of scores
+    def get_average(self, scores):
+        if len(self.scores) == 0:
+            return None
+        else:
+            return sum(self.scores) // len(self.scores)
