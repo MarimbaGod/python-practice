@@ -29,7 +29,6 @@ class BankAccount:
     def deposit(self, amount):
         self.balance += amount
         # self.balance = self.balance + amount   #OR THIS WORKS
-        #self.balance + amount didnt work
         #needed the +=
 
     def withdraw(self, amount):
@@ -66,3 +65,25 @@ class BankAccount:
 
     # method deposit(self, amount)
         # increases the balance by the amount
+
+
+
+# code along. THIS ONE HAS THE IF STATEMENT FOR OVERDRAFT
+# class BankAccount:
+#     def __init__(self, opening_balance):
+#         # self.opening_balance = opening_balance
+#         self.total = opening_balance
+
+#     def get_balance(self):
+#         return self.total
+
+#     def withdraw(self, amount):
+#         if amount > self.total:
+#             Print("You too broke D:")
+#         else:
+#             self.total -= amount
+#             print(self.total)
+
+#     def deposit(self, amount):
+#         self.total += amount
+#         print(self.total)

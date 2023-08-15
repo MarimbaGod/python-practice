@@ -19,3 +19,5 @@ def gear_for_day(is_workday, is_sunny):
         gear.append("surfboard")                        # solution
     return gear                                         # solution
     # pass                                              # problem
+
+print(gear_for_day(True, False))

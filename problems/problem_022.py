@@ -33,3 +33,6 @@ def gear_for_day(is_workday, is_sunny):
 
 
 gear_for_day("", "")
+
+
+#can use reg.ex
