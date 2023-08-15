@@ -18,3 +18,8 @@ def pairwise_add(list1, list2):
         results.append(value1 + value2)                 # solution
     return results                                      # solution
     # pass                                              # problem
+
+
+pairwise_add(list1, list2)
+list1:  [1, 2, 3, 4]
+#     list2:  [4, 5, 6, 7]
