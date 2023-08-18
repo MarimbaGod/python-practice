@@ -12,4 +12,14 @@
 # problem to get a good feel for how to solve it.
 
 def find_second_largest(values):
-    pass
+    # values = [1, 2, 7, 4, 9, 6, 2, 8]
+    if len(values) == 1:
+        return None
+    values_sorted = sorted(values)
+    print(values_sorted[(len(values) - 2)])
+
+
+
+# values = [1, 2, 7, 4, 9, 6, 2, 8]
+find_second_largest([1, 2, 7, 4, 9, 6, 2, 8])
+# values = [1, 2, 7, 4, 9, 6, 2, 8]
