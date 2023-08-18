@@ -14,4 +14,15 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_squares(values):
-    pass
+    # total = 0
+    list_of_squares = []
+    for num in values:
+        list_of_squares.append((num ** 2))
+    print(list_of_squares)
+    # total = 0
+    # for num_sq in list_of_squares:
+    # += num_sq
+    # print(sum_sq)
+
+sum_of_squares([1, 2, 3, 4, 5, 6])
+# print(sum_sq)
