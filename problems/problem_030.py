@@ -12,7 +12,6 @@
 # problem to get a good feel for how to solve it.
 
 def find_second_largest(values):
-    # values = [1, 2, 7, 4, 9, 6, 2, 8]
     if len(values) == 1:
         return None
     values_sorted = sorted(values)

@@ -22,4 +22,14 @@
 
 
 def count_letters_and_digits(s):
-    pass
+    # string_list = list("chicken")
+    alpha_count = 0
+    digit_count = 0
+    # THIS IS NOT NECESSARY I GUESS>>
+    # .isdigit() and .isalpha() work on strings
+    for char in s:
+        if char.isalpha():
+            alpha_count += 1
+        elif char.isdigit():
+            digit_count += 1
+    return digit_count, alpha_count

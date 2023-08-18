@@ -24,4 +24,11 @@
 # at the last one you just wrote unless you really must.
 
 def count_letters_and_digits(s):
-    pass
+    alpha_count = 0
+    digit_count = 0
+    for char in s:
+        if char.isdigit():
+            digit_count += 1
+        if char.isalpha():
+            alpha_count += 1
+    return alpha_count, digit_count

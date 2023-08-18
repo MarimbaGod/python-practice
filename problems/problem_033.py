@@ -15,5 +15,15 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+
+#make a list   n_even_numbers = []
+#append (sum + 2) = sum ) n times
+#even = n +2
+
 def sum_of_first_n_even_numbers(n):
-    pass
+    sum_tot = 0
+    if len(n) < 0:
+        eturn None
+    for num in range(n + 1):
+        sum_tot = sum_tot + (2 * num)
+    return sum_tot
