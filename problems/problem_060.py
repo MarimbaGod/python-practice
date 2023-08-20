@@ -12,4 +12,5 @@
 #       returns: []
 #     * input:   [1, 3, 5, 7]
 #       returns: [1, 3, 5, 7]
-
+def odds_only(nums):
+    return [elem for elem in nums if elem % 2 == 1]
