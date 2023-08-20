@@ -21,7 +21,14 @@
 # Write out your own pseudocode to help guide you.
 
 # input["num,bers", "conn,ected", "to,be,added"]
-#
+
+def pairwise_add(list1, list2):
+    sum_pairs = []
+    for value1, value2 in zip(list1, list2):
+        sum_pairs.append(value1 + value2)
+    # print(sum_pairs)
+    return sum_pairs
+
 #
 #
 #

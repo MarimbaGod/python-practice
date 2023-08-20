@@ -23,7 +23,7 @@
 def sum_of_first_n_even_numbers(n):
     sum_tot = 0
     if len(n) < 0:
-        eturn None
+        return None
     for num in range(n + 1):
         sum_tot = sum_tot + (2 * num)
     return sum_tot

@@ -24,4 +24,10 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    #the number will be a part of the string
+    #pad with the .insert or
+    number_str = str(number)
+    final_str = ""
+    if len(number_str) < length:
+        number_str += pad
+    return number_str
