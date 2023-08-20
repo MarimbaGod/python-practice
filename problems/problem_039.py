@@ -4,6 +4,8 @@
 # for its keys, and the original dictionary's keys for
 # its values.
 #
+# THIS RETURNS A NEW DICTIONARY
+
 # Examples:
 #   * input:  {}
 #     output: {}
@@ -13,4 +15,7 @@
 #     output: {1: "one", 2: "two", 3: "three"}
 
 def reverse_dictionary(dictionary):
-    pass
+    new_dict = {}
+    for key, value in dictionary.items():
+        new_dict[value] = key
+    return new_dict
